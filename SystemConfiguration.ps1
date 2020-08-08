@@ -82,7 +82,8 @@ $software = 'Visual Studio Code', `
     'Spotify', `
     'Microsoft .NET Core', `
     'Powertoys', `
-    'WPS Office'
+    'WPS Office', `
+    'Logitech Options'
     
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
@@ -116,7 +117,8 @@ choco install -y `
     spotify `
     dotnetcore `
     powertoys `
-    wps-office-free
+    wps-office-free `
+    logitech-options
 
 Install-Module -Name Az -AllowClobber -Scope AllUsers -Verbose
 
