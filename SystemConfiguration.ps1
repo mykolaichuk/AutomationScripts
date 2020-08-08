@@ -83,6 +83,7 @@ $software = 'Visual Studio Code', `
     'Microsoft .NET Core', `
     'Powertoys', `
     'WPS Office'
+    
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
 Write-Host "Press `"Enter`" to continue or `"Ctrl-C`" to cancel"
