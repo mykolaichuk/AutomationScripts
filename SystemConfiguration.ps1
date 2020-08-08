@@ -81,7 +81,8 @@ $software = 'Visual Studio Code', `
     'WMI Explorer', `
     'Spotify',
     'Microsoft .NET Core'
-    'Powertoys'
+    'Powertoys' `
+    'WPS Office'
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
 Write-Host "Press `"Enter`" to continue or `"Ctrl-C`" to cancel"
@@ -113,7 +114,8 @@ choco install -y `
     wmiexplorer `
     spotify `
     dotnetcore `
-    powertoys
+    powertoys `
+    wps-office-free
 
 Install-Module -Name Az -AllowClobber -Scope AllUsers -Verbose
 
