@@ -79,9 +79,9 @@ $software = 'Visual Studio Code', `
     'Monosnap', `
     'Lightshot', `
     'WMI Explorer', `
-    'Spotify',
-    'Microsoft .NET Core'
-    'Powertoys' `
+    'Spotify', `
+    'Microsoft .NET Core', `
+    'Powertoys', `
     'WPS Office'
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
