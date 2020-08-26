@@ -84,7 +84,8 @@ $software = 'Visual Studio Code', `
     'Powertoys', `
     'WPS Office', `
     'Logitech Options' `
-    'utorrent'
+    'utorrent' `
+    '7zip'
     
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
@@ -120,7 +121,8 @@ choco install -y `
     powertoys `
     wps-office-free `
     logitech-options `
-    utorrent
+    utorrent `
+    7zip
 
 Install-Module -Name Az -AllowClobber -Scope AllUsers -Verbose
 
@@ -140,6 +142,9 @@ code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension redhat.vscode-yaml
+
+#----------------- Enable Telnet -----------------#
+dism /online /Enable-Feature /FeatureName:TelnetClient
 
 #----------------- Enable WSL -----------------#
 Write-Host "Enabling WSL" -ForegroundColor Green
