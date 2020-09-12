@@ -83,9 +83,11 @@ $software = 'Visual Studio Code', `
     'Microsoft .NET Core', `
     'Powertoys', `
     'WPS Office', `
-    'Logitech Options' `
-    'utorrent' `
-    '7zip'
+    'Logitech Options', `
+    'utorrent', `
+    '7zip', `
+    'Deskpins', `
+    'Docker Desktop'
     
 Write-Host "Current software is about to be installed:" -ForegroundColor Green; $software
 
@@ -122,7 +124,9 @@ choco install -y `
     wps-office-free `
     logitech-options `
     utorrent `
-    7zip
+    7zip `
+    deskpins `
+    docker-desktop
 
 Install-Module -Name Az -AllowClobber -Scope AllUsers -Verbose
 
@@ -142,6 +146,7 @@ code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension redhat.vscode-yaml
+code --install-extension ms-azuretools.vscode-azureappservice
 
 #----------------- Enable Telnet -----------------#
 dism /online /Enable-Feature /FeatureName:TelnetClient
